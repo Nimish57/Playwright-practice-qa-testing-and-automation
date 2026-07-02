@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Create Account - Porsche</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    color:white;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images-porsche.imgix.net/-/media/0B3F90A75B0141FF8BED694C3C1A323B_7C02423B08CB49C8801E208B2D16A51E_CZ25W18OX0004-911-gt3-white-side?w=2560&h=1440&q=45&crop=faces%2Centropy%2Cedges&auto=format");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:100vh;
+}
+.navbar{
+    width:90%;
+    margin:auto;
+    padding:20px 0;
+    display:flex;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:gainsboro;
+}
+
+.back{
+    color:wheat;
+    text-decoration:none;
+}
+.signup-form{
+    width:350px;
+    background:rgba(0,0,0,0.7);
+    padding:25px;
+    border-radius:10px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.signup-form h2{
+    text-align:center;
+    background:white;
+    color:black;
+    padding:8px;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+
+.signup-form input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid white;
+    color:white;
+}
+
+.signup-form input:focus{
+    border-bottom:1px solid wheat;
+    outline:none;
+}
+
+.signup-btn{
+    width:100%;
+    padding:10px;
+    background:wheat;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:10px;
+}
+</style>
+
+</head>
+
+<body>
+    <button id="btn1" name="btn" onclick="demo()">Click me</button>
+    <script>
+        let btn = document.getElementById("btn1");
+        btn.onclick = function demo() {
+            alert("Congrats!! you have won 10% discount on your first purchase. Use code: PORSCHE10 at checkout.🥳");
+        }
+    </script>
+<div class="navbar">
+    <div class="logo">Porsche</div>
+    <a class="back" href="proje.html">⬅ Back to Home</a>
+</div>
+<div class="signup-form">
+
+<h2>Create Account</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="password" placeholder="Create Password" required>
+
+<input type="password" placeholder="Confirm Password" required>
+
+<button type="submit" class="signup-btn">Create Account</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
